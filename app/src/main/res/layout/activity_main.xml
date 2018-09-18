@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="199dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Current Date"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/yy"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:hint="YYYY"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/mm"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="MM"/>
+
+        <EditText
+            android:id="@+id/dd"
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="DD" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Birthday Date"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/yy1"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="YYYY" />
+
+        <EditText
+            android:id="@+id/mm1"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="MM" />
+
+        <EditText
+            android:id="@+id/dd1"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="DD" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@color/sky"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="CALCULATE"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/age1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/age2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/sky"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="RESET"/>
+
+
+</LinearLayout>
